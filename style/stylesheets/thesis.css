@@ -2,6 +2,11 @@
 /* Mixins */
 /* All sizes */
 /* line 35, ../sass/thesis.scss */
+a {
+  color: blue;
+}
+
+/* line 38, ../sass/thesis.scss */
 a.bookmark {
   background-image: url("img/book_link.png");
   background-position: right center;
@@ -11,12 +16,12 @@ a.bookmark {
   text-decoration: none;
 }
 
-/* line 43, ../sass/thesis.scss */
+/* line 46, ../sass/thesis.scss */
 abbr {
   border-bottom: dotted 1px black;
 }
 
-/* line 46, ../sass/thesis.scss */
+/* line 49, ../sass/thesis.scss */
 body {
   background-color: #fff;
   line-height: 1.5em;
@@ -25,36 +30,36 @@ body {
   word-wrap: break-word;
 }
 
-/* line 54, ../sass/thesis.scss */
+/* line 57, ../sass/thesis.scss */
 .figure,
 .table {
   text-align: center;
 }
-/* line 56, ../sass/thesis.scss */
+/* line 59, ../sass/thesis.scss */
 .figure .caption,
 .table .caption {
   font-weight: bold;
   padding: 0.556em;
 }
-/* line 61, ../sass/thesis.scss */
+/* line 64, ../sass/thesis.scss */
 .figure pre, .figure table,
 .table pre,
 .table table {
   text-align: left;
 }
 
-/* line 65, ../sass/thesis.scss */
+/* line 68, ../sass/thesis.scss */
 .figure {
   border: solid 1px #bbb;
   font-size: 0.9em;
   margin: 1.111em 0;
   word-wrap: normal;
 }
-/* line 70, ../sass/thesis.scss */
+/* line 73, ../sass/thesis.scss */
 .figure img {
   width: 75%;
 }
-/* line 73, ../sass/thesis.scss */
+/* line 76, ../sass/thesis.scss */
 .figure pre {
   background: #ddd;
   border-bottom: solid 1px #bbb;
@@ -65,14 +70,14 @@ body {
   padding: 0.556em;
 }
 
-/* line 83, ../sass/thesis.scss */
+/* line 86, ../sass/thesis.scss */
 h1 {
   font-size: 3em;
   font-weight: bold;
   line-height: 1em;
 }
 
-/* line 88, ../sass/thesis.scss */
+/* line 91, ../sass/thesis.scss */
 h2 {
   font-size: 2em;
   font-weight: bold;
@@ -80,7 +85,7 @@ h2 {
   margin: 0.5em 0;
 }
 
-/* line 94, ../sass/thesis.scss */
+/* line 97, ../sass/thesis.scss */
 h3 {
   font-size: 1.5em;
   font-weight: bold;
@@ -88,7 +93,7 @@ h3 {
   margin: 0.667em 0;
 }
 
-/* line 100, ../sass/thesis.scss */
+/* line 103, ../sass/thesis.scss */
 h4 {
   font-size: 1.25em;
   font-weight: bold;
@@ -96,7 +101,7 @@ h4 {
   margin: 0.8em 0;
 }
 
-/* line 106, ../sass/thesis.scss */
+/* line 109, ../sass/thesis.scss */
 h5 {
   font-size: 1.1em;
   font-weight: bold;
@@ -104,30 +109,30 @@ h5 {
   margin: 0.909em 0;
 }
 
-/* line 112, ../sass/thesis.scss */
+/* line 115, ../sass/thesis.scss */
 #Header {
   text-align: center;
 }
 
-/* line 115, ../sass/thesis.scss */
+/* line 118, ../sass/thesis.scss */
 img {
   width: 100%;
 }
 
-/* line 118, ../sass/thesis.scss */
+/* line 121, ../sass/thesis.scss */
 p {
   margin: 1em 0;
   text-align: justify;
 }
 
-/* line 124, ../sass/thesis.scss */
+/* line 127, ../sass/thesis.scss */
 .list-of-figures,
 .list-of-tables,
 #TOC {
   margin: 1em 0 1em 1.2em;
 }
 @media only screen and (min-width: 30em) {
-  /* line 124, ../sass/thesis.scss */
+  /* line 127, ../sass/thesis.scss */
   .list-of-figures,
   .list-of-tables,
   #TOC {
@@ -154,22 +159,22 @@ p {
   margin-left: 1em;
 }
 
-/* line 127, ../sass/thesis.scss */
+/* line 130, ../sass/thesis.scss */
 .list-of-tables {
   display: none;
 }
 
-/* line 130, ../sass/thesis.scss */
+/* line 133, ../sass/thesis.scss */
 #LOT {
   display: none;
 }
 
-/* line 134, ../sass/thesis.scss */
+/* line 137, ../sass/thesis.scss */
 #MainContent ol {
   margin: 1em 0 1em 1.2em;
 }
 @media only screen and (min-width: 30em) {
-  /* line 134, ../sass/thesis.scss */
+  /* line 137, ../sass/thesis.scss */
   #MainContent ol {
     margin-left: 0;
   }
@@ -178,12 +183,12 @@ p {
 #MainContent ol li {
   list-style-type: decimal;
 }
-/* line 137, ../sass/thesis.scss */
+/* line 140, ../sass/thesis.scss */
 #MainContent ul {
   margin: 1em 0 1em 1.2em;
 }
 @media only screen and (min-width: 30em) {
-  /* line 137, ../sass/thesis.scss */
+  /* line 140, ../sass/thesis.scss */
   #MainContent ul {
     margin-left: 0;
   }
@@ -202,107 +207,107 @@ p {
   margin-left: 1em;
 }
 
-/* line 141, ../sass/thesis.scss */
+/* line 144, ../sass/thesis.scss */
 .note {
   background-color: #FCF0AD;
   border: solid 1px #f2da64;
   padding: 0.5em;
 }
 
-/* line 146, ../sass/thesis.scss */
+/* line 149, ../sass/thesis.scss */
 sub {
   font-size: xx-small;
 }
 
-/* line 149, ../sass/thesis.scss */
+/* line 152, ../sass/thesis.scss */
 sup {
   font-size: xx-small;
   position: relative;
   top: -0.7em;
 }
 
-/* line 154, ../sass/thesis.scss */
+/* line 157, ../sass/thesis.scss */
 table {
   display: none;
   margin: 1em 0;
 }
-/* line 158, ../sass/thesis.scss */
+/* line 161, ../sass/thesis.scss */
 table td, table th {
   padding: 0.2em;
   vertical-align: top;
 }
 
-/* line 163, ../sass/thesis.scss */
+/* line 166, ../sass/thesis.scss */
 .table {
   display: none;
 }
-/* line 165, ../sass/thesis.scss */
+/* line 168, ../sass/thesis.scss */
 .table table {
   margin: 0;
   width: 100%;
 }
-/* line 169, ../sass/thesis.scss */
+/* line 172, ../sass/thesis.scss */
 .table table td, .table table th {
   border: solid 1px #000;
 }
-/* line 172, ../sass/thesis.scss */
+/* line 175, ../sass/thesis.scss */
 .table table th {
   background-color: #ddd;
 }
 
-/* line 177, ../sass/thesis.scss */
+/* line 180, ../sass/thesis.scss */
 .teletype {
   font-family: Consolas, Lucida Console, "Courier New", monospace;
 }
 
 /* Larger than small screens */
 @media only screen and (min-width: 41em) {
-  /* line 183, ../sass/thesis.scss */
+  /* line 186, ../sass/thesis.scss */
   a.bookmark {
     background-image: none;
     position: relative;
     left: -1em;
     padding-left: 1em;
   }
-  /* line 188, ../sass/thesis.scss */
+  /* line 191, ../sass/thesis.scss */
   a.bookmark:hover {
     background-image: url("img/book_link.png");
     background-position: left center;
   }
 
-  /* line 193, ../sass/thesis.scss */
+  /* line 196, ../sass/thesis.scss */
   body {
     margin: 1em 2em;
   }
 
-  /* line 196, ../sass/thesis.scss */
+  /* line 199, ../sass/thesis.scss */
   .list-of-tables {
     display: block;
   }
 
-  /* line 199, ../sass/thesis.scss */
+  /* line 202, ../sass/thesis.scss */
   #LOT {
     display: block;
   }
 
-  /* line 202, ../sass/thesis.scss */
+  /* line 205, ../sass/thesis.scss */
   #NoteSmall {
     display: none;
   }
 
-  /* line 205, ../sass/thesis.scss */
+  /* line 208, ../sass/thesis.scss */
   table {
     display: table;
   }
 
-  /* line 208, ../sass/thesis.scss */
+  /* line 211, ../sass/thesis.scss */
   .table {
     display: block;
   }
 }
 /* Larger than medium screens */
 @media only screen and (min-width: 50em) {
-  /* line 215, ../sass/thesis.scss */
+  /* line 218, ../sass/thesis.scss */
   body {
     margin: 1em auto;
     max-width: 40em;

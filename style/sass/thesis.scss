@@ -32,6 +32,9 @@ $width-medium: 50em;
 }
 
 /* All sizes */
+a {
+  color: blue;
+}
 a.bookmark {
   background-image: url("img/book_link.png");
   background-position: right center;
