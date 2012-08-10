@@ -13,8 +13,6 @@
     <h3 class="center">Spring 2012</h3>
 </div>
 
-<div id="NoteSmall" class="note">You are reading the thesis on a small screen. This thesis contains some tables that does not fit this screen size, and as such they are not available. Read the thesis on a larger screen do see them.</div>
-
 <div id="Preface">
     <h2>Acknowledgments</h2>
     <p>
@@ -977,7 +975,7 @@ WHERE { ?subject ?predicate ?object }</pre>
 
 
     <div class="table" id="tth_tAb2.1">
-        <table border="1">
+        <table>
             <tr>
                 <th class="left">?subject</th>
                 <th class="left">?predicate</th>
@@ -995,7 +993,7 @@ WHERE { ?subject ?predicate ?object }</pre>
             </tr>
         </table>
         <div class="caption" id="tab:BackgroundSPARQLSELECT">
-            Table 1: Result from using query in listing  on the model in figure <a href="#fig:DirectedGraphSimpleCorrect">2.2</a>
+            Table 2.1: Result from using query in listing  on the model in figure <a href="#fig:DirectedGraphSimpleCorrect">2.2</a>
         </div>
     </div>
     <p>
@@ -1035,7 +1033,7 @@ WHERE { ?x foaf:familyName "Hassel" }</pre>
 
 
     <div class="table" id="tth_tAb2.2">
-        <table border="1">
+        <table>
             <tr>
                 <th class="left">?subject</th>
                 <th class="left">?predicate</th>
@@ -1048,7 +1046,7 @@ WHERE { ?x foaf:familyName "Hassel" }</pre>
             </tr>
         </table>
         <div class="caption" id="tab:BackgroundSPARQLCONSTRUCT">
-            Table 2: Result from using query in listing  on the graph resulting from the query in listing <a href="#lst:BackgroundSPARQLCONSTRUCT">2.18</a> begin executed on the model in figure <a href="#fig:DirectedGraphSimpleCorrect">2.2</a>.
+            Table 2.2: Result from using query in listing  on the graph resulting from the query in listing <a href="#lst:BackgroundSPARQLCONSTRUCT">2.18</a> begin executed on the model in figure <a href="#fig:DirectedGraphSimpleCorrect">2.2</a>.
         </div>
     </div>
     <p>
@@ -1621,69 +1619,49 @@ module moduleB {
     <div class="table" id="tth_tAb2.3">
         <table>
             <tr>
-                <th data-width="39"></th>
-                <th data-width="39"></th>
+                <th colspan="2" rowspan="2">&nbsp;</th>
                 <th colspan="3" class="center">Purpose</th>
             </tr>
             <tr>
-                <th data-width="39"></th>
-                <th data-width="39"></th>
                 <th class="left">Creational</th>
                 <th class="left">Structural</th>
                 <th class="left">Behavioral</th>
             </tr>
             <tr>
-                <th colspan="1" class="left"></th>
-                <th data-width="39">Class</th>
+                <th class="left" rowspan="7">Scope</th>
+                <th class="left">Class</th>
                 <td class="left"></td>
                 <td class="left">Adapter</td>
                 <td class="left">Interpreter</td>
             </tr>
             <tr>
-                <th colspan="1" class="left"></th>
-                <th data-width="39"></th>
+                <th class="left" rowspan="6">Object</th>
                 <td class="left">Builder</td>
                 <td class="left">Adapter</td>
                 <td class="left">Observer</td>
             </tr>
             <tr>
-                <th colspan="1" class="left"></th>
-                <th data-width="39"></th>
                 <td class="left">Prototype</td>
                 <td class="left">Bridge</td>
                 <td class="left">Strategy</td>
             </tr>
             <tr>
-                <th colspan="1" class="left"></th>
-                <th data-width="39"></th>
-                <td class="left"></td>
+                <td class="left" rowspan="4">&nbsp;</td>
                 <td class="left">Composite</td>
-                <td class="left"></td>
+                <td class="left" rowspan="4">&nbsp;</td>
             </tr>
             <tr>
-                <th colspan="1" class="left"></th>
-                <th data-width="39"></th>
-                <td class="left"></td>
                 <td class="left">Decorator</td>
-                <td class="left"></td>
             </tr>
             <tr>
-                <th colspan="1" class="left"></th>
-                <th data-width="39"></th>
-                <td class="left"></td>
                 <td class="left">Facade</td>
-                <td class="left"></td>
             </tr>
             <tr>
-                <th colspan="1" class="left"></th>
-                <th data-width="39"></th>
-                <td class="left"></td>
                 <td class="left">Proxy</td>
-                <td class="left"></td>
             </tr>
         </table>
         <div class="caption" id="tab:DesignPatternClassification">
-            Table 3: Categorization of SDP relevant to this thesis, given in the classification scheme proposed by Erich Gamme, et.al. [<a href="#DesignPatterns:1994:Book" data-name="CITEDesignPatterns:1994:Book">22</a>,p. 10].
+            Table 2.3: Categorization of SDP relevant to this thesis, given in the classification scheme proposed by Erich Gamme, et.al. [<a href="#DesignPatterns:1994:Book" data-name="CITEDesignPatterns:1994:Book">22</a>,p. 10].
         </div>
     </div>
     <p>
@@ -2454,7 +2432,7 @@ for (button in buttons) {
 
 
     <div class="table" id="tth_tAb5.1">
-        <table border="1">
+        <table>
             <tr>
                 <th class="left">Graphite</th>
                 <th class="left">rdfQuery</th>
@@ -2532,7 +2510,7 @@ for (button in buttons) {
             </tr>
         </table>
         <div class="caption" id="tab:UsedLibrariesBrances">
-            Table 1: Overview of branches and their modules.
+            Table 5.1: Overview of branches and their modules.
         </div>
     </div>
     <h3 id="tth_sEc5.2"><a class="bookmark" href="#tth_sEc5.2">5.2 rdfQuery</a></h3>
@@ -4439,7 +4417,7 @@ buster.testCase("Testing contract", {
 
 
     <div class="table" id="tth_tAbB.1">
-    <table border="1">
+    <table>
     <tr>
         <th class="center">Module</th>
         <th class="center">Tests</th>
@@ -4652,7 +4630,7 @@ buster.testCase("Testing contract", {
     </tr>
     </table>
     <div class="caption" id="tab:AppendixTestResults">
-        Table 1: Test results for tests part of Graphite.
+        Table B.1: Test results for tests part of Graphite.
     </div>
     </div>
 
@@ -4678,7 +4656,7 @@ buster.testCase("Testing contract", {
 
 
     <div class="table" id="tth_tAbC.1">
-    <table border="1">
+    <table>
     <tr>
         <th class="center">Name</th>
         <th class="center">Av</th>
@@ -5486,7 +5464,7 @@ buster.testCase("Testing contract", {
     </tr>
     </table>
     <div class="caption" id="tab:AppendixRelatedWork">
-        Table 1: List of projects examined as part of this thesis.
+        Table C.1: List of projects examined as part of this thesis.
     </div>
     </div>
     <hr />

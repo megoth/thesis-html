@@ -31,6 +31,11 @@ $width-medium: 50em;
   }
 }
 
+@mixin table-size($size) {
+  margin: 1 / $size * 1em 0;
+  font-size: $size * 1em;
+}
+
 /* All sizes */
 a {
   color: blue;
@@ -155,8 +160,7 @@ sup {
   top: -0.7em;
 }
 table {
-  display: none;
-  margin: 1em 0;
+  @include table-size(0.5);
   td,
   th {
     padding: 0.2em;
@@ -164,7 +168,6 @@ table {
   }
 }
 .table {
-  display: none;
   table {
     margin: 0;
     width: 100%;
@@ -182,7 +185,7 @@ table {
 }
 
 /* Larger than small screens */
-@media only screen and (min-width: 41em) {
+@media only screen and (min-width: 30em) {
   a.bookmark {
     background-image: none;
     position: relative;
@@ -202,14 +205,15 @@ table {
   #LOT {
     display: block;
   }
-  #NoteSmall {
-    display: none;
-  }
   table {
-    display: table;
+    @include table-size(0.7);
   }
-  .table {
-    display: block;
+}
+
+/* Larger than small-medium screens */
+@media only screen and (min-width: 40em) {
+  table {
+    @include table-size(0.9);
   }
 }
 
@@ -218,5 +222,8 @@ table {
   body {
     margin: 1em auto;
     max-width: 40em;
+  }
+  table {
+    @include table-size(1);
   }
 }
