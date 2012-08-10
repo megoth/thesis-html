@@ -33,406 +33,412 @@
 
 <h2>Contents</h2>
 
+<div id="Contents">
 <ul id="TOC">
-    <li><a href="#tth_chAp1">1 Introduction</a></li>
-    <li>
-        I Foundations
-        <ul>
-            <li>
-                <a href="#tth_chAp2">2 Background</a>
-                <ul>
-                    <li>
-                        <a href="#tth_sEc2.1">2.1 SW</a>
-                        <ul>
-                            <li><a href="#tth_sEc2.1.1">2.1.1 RDF</a></li>
-                            <li><a href="#tth_sEc2.1.2">2.1.2 RDFS</a></li>
-                            <li><a href="#tth_sEc2.1.3">2.1.3 OWL</a></li>
-                            <li>
-                                <a href="#tth_sEc2.1.4">2.1.4 LD</a>
-                                <ul>
-                                    <li><a href="#tth_sEc2.1.4.1">2.1.4.1 LOD</a></li>
-                                    <li><a href="#tth_sEc2.1.4.2">2.1.4.2 URL vs. URI vs. IRI</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#tth_sEc2.1.5">2.1.5 Serializations</a>
-                                <ul>
-                                    <li><a href="#tth_sEc2.1.5.1">2.1.5.1 RDF/XML</a></li>
-                                    <li><a href="#tth_sEc2.1.5.2">2.1.5.2 Turtle</a></li>
-                                    <li><a href="#tth_sEc2.1.5.3">2.1.5.3 N3</a></li>
-                                    <li><a href="#tth_sEc2.1.5.4">2.1.5.4 N-Triples</a></li>
-                                    <li><a href="#tth_sEc2.1.5.5">2.1.5.5 RDF JSON</a></li>
-                                    <li><a href="#tth_sEc2.1.5.6">2.1.5.6 JSON-LD</a></li>
-                                    <li><a href="#tth_sEc2.1.5.7">2.1.5.7 RDFa</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#tth_sEc2.1.6">2.1.6 Querying</a>
-                                <ul>
-                                    <li><a href="#tth_sEc2.1.6.1">2.1.6.1 SPARQL</a></li>
-                                    <li><a href="#tth_sEc2.1.6.2">2.1.6.2 SPARQL Update Language</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#tth_sEc2.1.7">2.1.7 Entailment</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#tth_sEc2.2">2.2 JS</a>
-                        <ul>
-                            <li>
-                                <a href="#tth_sEc2.2.1">2.2.1 Object-Oriented</a>
-                                <ul>
-                                    <li><a href="#tth_sEc2.2.1.1">2.2.1.1 Prototypical Inheritance</a></li>
-                                    <li><a href="#tth_sEc2.2.1.2">2.2.1.2 Dynamic Properties</a></li>
-                                    <li><a href="#tth_sEc2.2.1.3">2.2.1.3 Functional Features</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#tth_sEc2.2.2">2.2.2 Scope</a>
-                                <ul>
-                                    <li><a href="#tth_sEc2.2.2.1">2.2.2.1 Closure</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#tth_sEc2.2.3">2.2.3 Static functions</a></li>
-                            <li><a href="#tth_sEc2.2.4">2.2.4 JSON</a></li>
-                            <li>
-                                <a href="#tth_sEc2.2.5">2.2.5 Asynchronous Loading of Resources</a>
-                                <ul>
-                                    <li><a href="#tth_sEc2.2.5.1">2.2.5.1 SOP</a></li>
-                                    <li><a href="#tth_sEc2.2.5.2">2.2.5.2 CSP</a></li>
-                                    <li><a href="#tth_sEc2.2.5.3">2.2.5.3 XHR</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#tth_sEc2.2.6">2.2.6 CJS</a>
-                                <ul>
-                                    <li><a href="#tth_sEc2.2.6.1">2.2.6.1 Promise Pattern</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#tth_sEc2.2.7">2.2.7 Server-side implementations</a></li>
-                            <li>
-                                <a href="#tth_sEc2.2.8">2.2.8 Module Patterns</a>
-                                <ul>
-                                    <li><a href="#tth_sEc2.2.8.1">2.2.8.1 Contained Module</a></li>
-                                    <li><a href="#tth_sEc2.2.8.2">2.2.8.2 Namespaces</a></li>
-                                    <li><a href="#tth_sEc2.2.8.3">2.2.8.3 AMD</a></li>
-                                    <li><a href="#tth_sEc2.2.8.4">2.2.8.4 CommonJS Module</a></li>
-                                    <li><a href="#tth_sEc2.2.8.5">2.2.8.5 Harmony</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#tth_sEc2.3">2.3 SDP</a>
-                        <ul>
-                            <li><a href="#tth_sEc2.3.1">2.3.1 Adapter</a></li>
-                            <li><a href="#tth_sEc2.3.2">2.3.2 Bridge</a></li>
-                            <li><a href="#tth_sEc2.3.3">2.3.3 Builder</a></li>
-                            <li><a href="#tth_sEc2.3.4">2.3.4 Composite</a></li>
-                            <li><a href="#tth_sEc2.3.5">2.3.5 Decorator</a></li>
-                            <li><a href="#tth_sEc2.3.6">2.3.6 Facade</a></li>
-                            <li><a href="#tth_sEc2.3.7">2.3.7 Interpreter</a></li>
-                            <li><a href="#tth_sEc2.3.8">2.3.8 Observer</a></li>
-                            <li><a href="#tth_sEc2.3.9">2.3.9 Prototype</a></li>
-                            <li><a href="#tth_sEc2.3.10">2.3.10 Proxy</a></li>
-                            <li><a href="#tth_sEc2.3.11">2.3.11 Strategy</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#tth_sEc2.4">2.4 TDD</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#tth_chAp3">3 Problem Description and Requirements</a>
-                <ul>
-                    <li><a href="#tth_sEc3.1">3.1 Problem</a></li>
-                    <li><a href="#tth_sEc3.2">3.2 What are the components required for the framework?</a></li>
-                    <li><a href="#tth_sEc3.3">3.3 Which SDPs are applicable for the components?</a></li>
-                    <li><a href="#tth_sEc3.4">3.4 Which features in JS are of use for the framework?</a></li>
-                    <li><a href="#tth_sEc3.5">3.5 How should the API be designed?</a></li>
-                </ul>
-            </li>
-        </ul>
-    </li>
-    <li>
-        II Implementation
-        <ul>
-            <li>
-                <a href="#tth_chAp4">4 Tools</a>
-                <ul>
-                    <li>
-                        <a href="#tth_sEc4.1">4.1 Buster</a>
-                        <ul>
-                            <li><a href="#tth_sEc4.1.1">4.1.1 Browsers</a></li>
-                            <li><a href="#tth_sEc4.1.2">4.1.2 Node</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#tth_sEc4.2">4.2 RequireJS</a></li>
-                    <li>
-                        <a href="#tth_sEc4.3">4.3 Git</a>
-                        <ul>
-                            <li><a href="#tth_sEc4.3.1">4.3.1 GH</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#tth_sEc4.4">4.4 WS</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#tth_chAp5">5 Used Libraries</a>
-                <ul>
-                    <li><a href="#tth_sEc5.1">5.1 Branches</a></li>
-                    <li><a href="#tth_sEc5.2">5.2 rdfQuery</a></li>
-                    <li><a href="#tth_sEc5.3">5.3 RDFStore</a></li>
-                    <li><a href="#tth_sEc5.4">5.4 Underscore.JS</a></li>
-                    <li><a href="#tth_sEc5.5">5.5 when.js</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#tth_chAp6">6 The Graphite Framework</a>
-                <ul>
-                    <li><a href="#tth_sEc6.1">6.1 API</a></li>
-                    <li><a href="#tth_sEc6.2">6.2 CURIE</a></li>
-                    <li><a href="#tth_sEc6.3">6.3 Data-type</a></li>
-                    <li>
-                        <a href="#tth_sEc6.4">6.4 Engine</a>
-                        <ul>
-                            <li><a href="#tth_sEc6.4.1">6.4.1 Abstract Query Tree</a></li>
-                            <li><a href="#tth_sEc6.4.2">6.4.2 Callbacks</a></li>
-                            <li><a href="#tth_sEc6.4.3">6.4.3 Query Filters</a></li>
-                            <li><a href="#tth_sEc6.4.4">6.4.4 Query Plan</a></li>
-                            <li><a href="#tth_sEc6.4.5">6.4.5 RDF JS Interface</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#tth_sEc6.5">6.5 Graph</a>
-                        <ul>
-                            <li><a href="#tth_sEc6.5.1">6.5.1 Backend</a></li>
-                            <li><a href="#tth_sEc6.5.2">6.5.2 Lexicon</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#tth_sEc6.6">6.6 Graphite</a></li>
-                    <li>
-                        <a href="#tth_sEc6.7">6.7 Loader</a>
-                        <ul>
-                            <li><a href="#tth_sEc6.7.1">6.7.1 Proxy</a></li>
-                            <li><a href="#tth_sEc6.7.2">6.7.2 XHR</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#tth_sEc6.8">6.8 Promise</a></li>
-                    <li><a href="#tth_sEc6.9">6.9 Query</a></li>
-                    <li>
-                        <a href="#tth_sEc6.10">6.10 Query Parser</a>
-                        <ul>
-                            <li><a href="#tth_sEc6.10.1">6.10.1 SPARQL</a></li>
-                            <li><a href="#tth_sEc6.10.2">6.10.2 SPARQL Full</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#tth_sEc6.11">6.11 RDF</a></li>
-                    <li><a href="#tth_sEc6.12">6.12 RDF Loader</a></li>
-                    <li>
-                        <a href="#tth_sEc6.13">6.13 RDF Parser</a>
-                        <ul>
-                            <li><a href="#tth_sEc6.13.1">6.13.1 JSON-LD</a></li>
-                            <li><a href="#tth_sEc6.13.2">6.13.2 RDF/XML</a></li>
-                            <li><a href="#tth_sEc6.13.3">6.13.3 Turtle</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#tth_sEc6.14">6.14 Tree Utils</a>
-                        <ul>
-                            <li><a href="#tth_sEc6.14.1">6.14.1 B-Tree</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#tth_sEc6.15">6.15 URI</a></li>
-                    <li><a href="#tth_sEc6.16">6.16 Utils</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#tth_chAp7">7 The Demo</a>
-                <ul>
-                    <li><a href="#tth_sEc7.1">7.1 Structure</a></li>
-                </ul>
-            </li>
-        </ul>
-    </li>
-    <li>
-        III Discussion and Conclusion
-        <ul>
-            <li>
-                <a href="#tth_chAp8">8 Discussion</a>
-                <ul>
-                    <li>
-                        <a href="#tth_sEc8.1">8.1 SW and JS</a>
-                        <ul>
-                            <li>
-                                <a href="#tth_sEc8.1.1">8.1.1 Representation of Data</a>
-                                <ul>
-                                    <li><a href="#tth_sEc8.1.1.1">8.1.1.1 RDF</a></li>
-                                    <li><a href="#tth_sEc8.1.1.2">8.1.1.2 SPARQL</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#tth_sEc8.1.2">8.1.2 Modularity</a></li>
-                            <li>
-                                <a href="#tth_sEc8.1.3">8.1.3 The Engine</a>
-                                <ul>
-                                    <li><a href="#tth_sEc8.1.3.1">8.1.3.1 Entailment</a></li>
-                                    <li><a href="#tth_sEc8.1.3.2">8.1.3.2 External Service</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#tth_sEc8.1.4">8.1.4 Asynchronous Functionality</a>
-                                <ul>
-                                    <li><a href="#tth_sEc8.1.4.1">8.1.4.1 XDR</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#tth_sEc8.1.5">8.1.5 Server-side implementation</a></li>
-                            <li><a href="#tth_sEc8.1.6">8.1.6 Marketing of SW in JS communities</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#tth_sEc8.2">8.2 JS and SDP</a>
-                        <ul>
-                            <li>
-                                <a href="#tth_sEc8.2.1">8.2.1 Third party libraries</a>
-                                <ul>
-                                    <li><a href="#tth_sEc8.2.1.1">8.2.1.1 Absence of the Adapter pattern</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#tth_sEc8.2.2">8.2.2 Additional SDPs</a></li>
-                            <li><a href="#tth_sEc8.2.3">8.2.3 Architectural Styles</a></li>
-                            <li><a href="#tth_sEc8.2.4">8.2.4 REST</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#tth_sEc8.3">8.3 JS and TDD</a></li>
-                    <li><a href="#tth_sEc8.4">8.4 SDP and TDD</a></li>
-                    <li><a href="#tth_sEc8.5">8.5 SW and SDP</a></li>
-                    <li><a href="#tth_sEc8.6">8.6 SW and TDD</a></li>
-                    <li>
-                        <a href="#tth_sEc8.7">8.7 Related Work</a>
-                        <ul>
-                            <li><a href="#tth_sEc8.7.1">8.7.1 Backplane</a></li>
-                            <li><a href="#tth_sEc8.7.2">8.7.2 Javascript RDF/Turtle Parser</a></li>
-                            <li><a href="#tth_sEc8.7.3">8.7.3 JS3</a></li>
-                            <li><a href="#tth_sEc8.7.4">8.7.4 jsonld.js</a></li>
-                            <li><a href="#tth_sEc8.7.5">8.7.5 Jstle</a></li>
-                            <li><a href="#tth_sEc8.7.6">8.7.6 rdflib.js</a></li>
-                            <li><a href="#tth_sEc8.7.7">8.7.7 RDFStore</a></li>
-                            <li><a href="#tth_sEc8.7.8">8.7.8 rdfQuery</a></li>
-                            <li><a href="#tth_sEc8.7.9">8.7.9 Sgvizler</a></li>
-                            <li><a href="#tth_sEc8.7.10">8.7.10 Simple JavaScript RDF parser and query thingy</a></li>
-                            <li><a href="#tth_sEc8.7.11">8.7.11 SPARQL JavaScript Library</a></li>
-                            <li><a href="#tth_sEc8.7.12">8.7.12 Tabulator</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#tth_chAp9">9 Conclusion</a>
-                <ul>
-                    <li><a href="#tth_sEc9.1">9.1 Further Work</a></li>
-                </ul>
-            </li>
-        </ul>
-    </li>
-    <li>
-        IV Appendices
-        <ul>
-            <li><a href="#tth_chApA">A Code Base</a></li>
-            <li><a href="#tth_chApB">B Test Results</a></li>
-            <li><a href="#tth_chApC">C Findings of Related Work</a><br />
-        </ul>
-    </li>
+<li><a href="#tth_chAp1">1 Introduction</a></li>
+<li>
+    I Foundations
+    <ul>
+        <li>
+            <a href="#tth_chAp2">2 Background</a>
+            <ul>
+                <li>
+                    <a href="#tth_sEc2.1">2.1 SW</a>
+                    <ul>
+                        <li><a href="#tth_sEc2.1.1">2.1.1 RDF</a></li>
+                        <li><a href="#tth_sEc2.1.2">2.1.2 RDFS</a></li>
+                        <li><a href="#tth_sEc2.1.3">2.1.3 OWL</a></li>
+                        <li>
+                            <a href="#tth_sEc2.1.4">2.1.4 LD</a>
+                            <ul>
+                                <li><a href="#tth_sEc2.1.4.1">2.1.4.1 LOD</a></li>
+                                <li><a href="#tth_sEc2.1.4.2">2.1.4.2 URL vs. URI vs. IRI</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#tth_sEc2.1.5">2.1.5 Serializations</a>
+                            <ul>
+                                <li><a href="#tth_sEc2.1.5.1">2.1.5.1 RDF/XML</a></li>
+                                <li><a href="#tth_sEc2.1.5.2">2.1.5.2 Turtle</a></li>
+                                <li><a href="#tth_sEc2.1.5.3">2.1.5.3 N3</a></li>
+                                <li><a href="#tth_sEc2.1.5.4">2.1.5.4 N-Triples</a></li>
+                                <li><a href="#tth_sEc2.1.5.5">2.1.5.5 RDF JSON</a></li>
+                                <li><a href="#tth_sEc2.1.5.6">2.1.5.6 JSON-LD</a></li>
+                                <li><a href="#tth_sEc2.1.5.7">2.1.5.7 RDFa</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#tth_sEc2.1.6">2.1.6 Querying</a>
+                            <ul>
+                                <li><a href="#tth_sEc2.1.6.1">2.1.6.1 SPARQL</a></li>
+                                <li><a href="#tth_sEc2.1.6.2">2.1.6.2 SPARQL Update Language</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#tth_sEc2.1.7">2.1.7 Entailment</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#tth_sEc2.2">2.2 JS</a>
+                    <ul>
+                        <li>
+                            <a href="#tth_sEc2.2.1">2.2.1 Object-Oriented</a>
+                            <ul>
+                                <li><a href="#tth_sEc2.2.1.1">2.2.1.1 Prototypical Inheritance</a></li>
+                                <li><a href="#tth_sEc2.2.1.2">2.2.1.2 Dynamic Properties</a></li>
+                                <li><a href="#tth_sEc2.2.1.3">2.2.1.3 Functional Features</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#tth_sEc2.2.2">2.2.2 Scope</a>
+                            <ul>
+                                <li><a href="#tth_sEc2.2.2.1">2.2.2.1 Closure</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#tth_sEc2.2.3">2.2.3 Static functions</a></li>
+                        <li><a href="#tth_sEc2.2.4">2.2.4 JSON</a></li>
+                        <li>
+                            <a href="#tth_sEc2.2.5">2.2.5 Asynchronous Loading of Resources</a>
+                            <ul>
+                                <li><a href="#tth_sEc2.2.5.1">2.2.5.1 SOP</a></li>
+                                <li><a href="#tth_sEc2.2.5.2">2.2.5.2 CSP</a></li>
+                                <li><a href="#tth_sEc2.2.5.3">2.2.5.3 XHR</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#tth_sEc2.2.6">2.2.6 CJS</a>
+                            <ul>
+                                <li><a href="#tth_sEc2.2.6.1">2.2.6.1 Promise Pattern</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#tth_sEc2.2.7">2.2.7 Server-side implementations</a></li>
+                        <li>
+                            <a href="#tth_sEc2.2.8">2.2.8 Module Patterns</a>
+                            <ul>
+                                <li><a href="#tth_sEc2.2.8.1">2.2.8.1 Contained Module</a></li>
+                                <li><a href="#tth_sEc2.2.8.2">2.2.8.2 Namespaces</a></li>
+                                <li><a href="#tth_sEc2.2.8.3">2.2.8.3 AMD</a></li>
+                                <li><a href="#tth_sEc2.2.8.4">2.2.8.4 CommonJS Module</a></li>
+                                <li><a href="#tth_sEc2.2.8.5">2.2.8.5 Harmony</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#tth_sEc2.3">2.3 SDP</a>
+                    <ul>
+                        <li><a href="#tth_sEc2.3.1">2.3.1 Adapter</a></li>
+                        <li><a href="#tth_sEc2.3.2">2.3.2 Bridge</a></li>
+                        <li><a href="#tth_sEc2.3.3">2.3.3 Builder</a></li>
+                        <li><a href="#tth_sEc2.3.4">2.3.4 Composite</a></li>
+                        <li><a href="#tth_sEc2.3.5">2.3.5 Decorator</a></li>
+                        <li><a href="#tth_sEc2.3.6">2.3.6 Facade</a></li>
+                        <li><a href="#tth_sEc2.3.7">2.3.7 Interpreter</a></li>
+                        <li><a href="#tth_sEc2.3.8">2.3.8 Observer</a></li>
+                        <li><a href="#tth_sEc2.3.9">2.3.9 Prototype</a></li>
+                        <li><a href="#tth_sEc2.3.10">2.3.10 Proxy</a></li>
+                        <li><a href="#tth_sEc2.3.11">2.3.11 Strategy</a></li>
+                    </ul>
+                </li>
+                <li><a href="#tth_sEc2.4">2.4 TDD</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#tth_chAp3">3 Problem Description and Requirements</a>
+            <ul>
+                <li><a href="#tth_sEc3.1">3.1 Problem</a></li>
+                <li><a href="#tth_sEc3.2">3.2 What are the components required for the framework?</a></li>
+                <li><a href="#tth_sEc3.3">3.3 Which SDPs are applicable for the components?</a></li>
+                <li><a href="#tth_sEc3.4">3.4 Which features in JS are of use for the framework?</a></li>
+                <li><a href="#tth_sEc3.5">3.5 How should the API be designed?</a></li>
+            </ul>
+        </li>
+    </ul>
+</li>
+<li>
+    II Implementation
+    <ul>
+        <li>
+            <a href="#tth_chAp4">4 Tools</a>
+            <ul>
+                <li>
+                    <a href="#tth_sEc4.1">4.1 Buster</a>
+                    <ul>
+                        <li><a href="#tth_sEc4.1.1">4.1.1 Browsers</a></li>
+                        <li><a href="#tth_sEc4.1.2">4.1.2 Node</a></li>
+                    </ul>
+                </li>
+                <li><a href="#tth_sEc4.2">4.2 RequireJS</a></li>
+                <li>
+                    <a href="#tth_sEc4.3">4.3 Git</a>
+                    <ul>
+                        <li><a href="#tth_sEc4.3.1">4.3.1 GH</a></li>
+                    </ul>
+                </li>
+                <li><a href="#tth_sEc4.4">4.4 WS</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#tth_chAp5">5 Used Libraries</a>
+            <ul>
+                <li><a href="#tth_sEc5.1">5.1 Branches</a></li>
+                <li><a href="#tth_sEc5.2">5.2 rdfQuery</a></li>
+                <li><a href="#tth_sEc5.3">5.3 RDFStore</a></li>
+                <li><a href="#tth_sEc5.4">5.4 Underscore.JS</a></li>
+                <li><a href="#tth_sEc5.5">5.5 when.js</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#tth_chAp6">6 The Graphite Framework</a>
+            <ul>
+                <li><a href="#tth_sEc6.1">6.1 API</a></li>
+                <li><a href="#tth_sEc6.2">6.2 CURIE</a></li>
+                <li><a href="#tth_sEc6.3">6.3 Data-type</a></li>
+                <li>
+                    <a href="#tth_sEc6.4">6.4 Engine</a>
+                    <ul>
+                        <li><a href="#tth_sEc6.4.1">6.4.1 Abstract Query Tree</a></li>
+                        <li><a href="#tth_sEc6.4.2">6.4.2 Callbacks</a></li>
+                        <li><a href="#tth_sEc6.4.3">6.4.3 Query Filters</a></li>
+                        <li><a href="#tth_sEc6.4.4">6.4.4 Query Plan</a></li>
+                        <li><a href="#tth_sEc6.4.5">6.4.5 RDF JS Interface</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#tth_sEc6.5">6.5 Graph</a>
+                    <ul>
+                        <li><a href="#tth_sEc6.5.1">6.5.1 Backend</a></li>
+                        <li><a href="#tth_sEc6.5.2">6.5.2 Lexicon</a></li>
+                    </ul>
+                </li>
+                <li><a href="#tth_sEc6.6">6.6 Graphite</a></li>
+                <li>
+                    <a href="#tth_sEc6.7">6.7 Loader</a>
+                    <ul>
+                        <li><a href="#tth_sEc6.7.1">6.7.1 Proxy</a></li>
+                        <li><a href="#tth_sEc6.7.2">6.7.2 XHR</a></li>
+                    </ul>
+                </li>
+                <li><a href="#tth_sEc6.8">6.8 Promise</a></li>
+                <li><a href="#tth_sEc6.9">6.9 Query</a></li>
+                <li>
+                    <a href="#tth_sEc6.10">6.10 Query Parser</a>
+                    <ul>
+                        <li><a href="#tth_sEc6.10.1">6.10.1 SPARQL</a></li>
+                        <li><a href="#tth_sEc6.10.2">6.10.2 SPARQL Full</a></li>
+                    </ul>
+                </li>
+                <li><a href="#tth_sEc6.11">6.11 RDF</a></li>
+                <li><a href="#tth_sEc6.12">6.12 RDF Loader</a></li>
+                <li>
+                    <a href="#tth_sEc6.13">6.13 RDF Parser</a>
+                    <ul>
+                        <li><a href="#tth_sEc6.13.1">6.13.1 JSON-LD</a></li>
+                        <li><a href="#tth_sEc6.13.2">6.13.2 RDF/XML</a></li>
+                        <li><a href="#tth_sEc6.13.3">6.13.3 Turtle</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#tth_sEc6.14">6.14 Tree Utils</a>
+                    <ul>
+                        <li><a href="#tth_sEc6.14.1">6.14.1 B-Tree</a></li>
+                    </ul>
+                </li>
+                <li><a href="#tth_sEc6.15">6.15 URI</a></li>
+                <li><a href="#tth_sEc6.16">6.16 Utils</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#tth_chAp7">7 The Demo</a>
+            <ul>
+                <li><a href="#tth_sEc7.1">7.1 Structure</a></li>
+            </ul>
+        </li>
+    </ul>
+</li>
+<li>
+    III Discussion and Conclusion
+    <ul>
+        <li>
+            <a href="#tth_chAp8">8 Discussion</a>
+            <ul>
+                <li>
+                    <a href="#tth_sEc8.1">8.1 SW and JS</a>
+                    <ul>
+                        <li>
+                            <a href="#tth_sEc8.1.1">8.1.1 Representation of Data</a>
+                            <ul>
+                                <li><a href="#tth_sEc8.1.1.1">8.1.1.1 RDF</a></li>
+                                <li><a href="#tth_sEc8.1.1.2">8.1.1.2 SPARQL</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#tth_sEc8.1.2">8.1.2 Modularity</a></li>
+                        <li>
+                            <a href="#tth_sEc8.1.3">8.1.3 The Engine</a>
+                            <ul>
+                                <li><a href="#tth_sEc8.1.3.1">8.1.3.1 Entailment</a></li>
+                                <li><a href="#tth_sEc8.1.3.2">8.1.3.2 External Service</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#tth_sEc8.1.4">8.1.4 Asynchronous Functionality</a>
+                            <ul>
+                                <li><a href="#tth_sEc8.1.4.1">8.1.4.1 XDR</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#tth_sEc8.1.5">8.1.5 Server-side implementation</a></li>
+                        <li><a href="#tth_sEc8.1.6">8.1.6 Marketing of SW in JS communities</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#tth_sEc8.2">8.2 JS and SDP</a>
+                    <ul>
+                        <li>
+                            <a href="#tth_sEc8.2.1">8.2.1 Third party libraries</a>
+                            <ul>
+                                <li><a href="#tth_sEc8.2.1.1">8.2.1.1 Absence of the Adapter pattern</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#tth_sEc8.2.2">8.2.2 Additional SDPs</a></li>
+                        <li><a href="#tth_sEc8.2.3">8.2.3 Architectural Styles</a></li>
+                        <li><a href="#tth_sEc8.2.4">8.2.4 REST</a></li>
+                    </ul>
+                </li>
+                <li><a href="#tth_sEc8.3">8.3 JS and TDD</a></li>
+                <li><a href="#tth_sEc8.4">8.4 SDP and TDD</a></li>
+                <li><a href="#tth_sEc8.5">8.5 SW and SDP</a></li>
+                <li><a href="#tth_sEc8.6">8.6 SW and TDD</a></li>
+                <li>
+                    <a href="#tth_sEc8.7">8.7 Related Work</a>
+                    <ul>
+                        <li><a href="#tth_sEc8.7.1">8.7.1 Backplane</a></li>
+                        <li><a href="#tth_sEc8.7.2">8.7.2 Javascript RDF/Turtle Parser</a></li>
+                        <li><a href="#tth_sEc8.7.3">8.7.3 JS3</a></li>
+                        <li><a href="#tth_sEc8.7.4">8.7.4 jsonld.js</a></li>
+                        <li><a href="#tth_sEc8.7.5">8.7.5 Jstle</a></li>
+                        <li><a href="#tth_sEc8.7.6">8.7.6 rdflib.js</a></li>
+                        <li><a href="#tth_sEc8.7.7">8.7.7 RDFStore</a></li>
+                        <li><a href="#tth_sEc8.7.8">8.7.8 rdfQuery</a></li>
+                        <li><a href="#tth_sEc8.7.9">8.7.9 Sgvizler</a></li>
+                        <li><a href="#tth_sEc8.7.10">8.7.10 Simple JavaScript RDF parser and query thingy</a></li>
+                        <li><a href="#tth_sEc8.7.11">8.7.11 SPARQL JavaScript Library</a></li>
+                        <li><a href="#tth_sEc8.7.12">8.7.12 Tabulator</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#tth_chAp9">9 Conclusion</a>
+            <ul>
+                <li><a href="#tth_sEc9.1">9.1 Further Work</a></li>
+            </ul>
+        </li>
+    </ul>
+</li>
+<li>
+    IV Appendices
+    <ul>
+        <li><a href="#tth_chApA">A Code Base</a></li>
+        <li><a href="#tth_chApB">B Test Results</a></li>
+        <li><a href="#tth_chApC">C Findings of Related Work</a><br />
+    </ul>
+</li>
 </ul>
+</div>
 
 <h2>List of Figures</h2>
 
-<ul class="list-of-figures">
-    <li><a href="#tth_fIg2.1">2.1  A simple directed graph</a></li>
-    <li><a href="#tth_fIg2.2">2.2  A simple directed graph, with IRIs</a></li>
-    <li><a href="#tth_fIg2.3">2.3  A graph containing a BN.</a></li>
-    <li><a href="#tth_fIg2.4">2.4  Linking Open Data cloud diagram</a></li>
-    <li><a href="#tth_fIg2.5">2.5  Serialization of figure <a href="#fig:DirectedGraphSimpleCorrect">2.2</a> into RDF/XML.</a></li>
-    <li><a href="#tth_fIg2.6">2.6  XML and Semantic Web W3C Standards Timeline.</a></li>
-    <li><a href="#tth_fIg2.7">2.7  Serialization of figure <a href="#fig:DirectedGraphSimpleCorrect">2.2</a> into Turtle.</a></li>
-    <li><a href="#tth_fIg2.8">2.8  Serialization of figure <a href="#fig:DirectedGraphBlankNode">2.3</a> into Turtle.</a></li>
-    <li><a href="#tth_fIg2.9">2.9  Serialization of figure <a href="#fig:DirectedGraphSimpleCorrect">2.2</a> into N3.</a></li>
-    <li><a href="#tth_fIg2.10">2.10  Serialization of figure <a href="#fig:DirectedGraphSimpleCorrect">2.2</a> into N-Triples.</a></li>
-    <li><a href="#tth_fIg2.11">2.11  Serialization of figure <a href="#fig:DirectedGraphSimpleCorrect">2.2</a> into RDF JSON.</a></li>
-    <li><a href="#tth_fIg2.12">2.12  Serialization of figure <a href="#fig:DirectedGraphSimpleCorrect">2.2</a> into JSON-LD.</a></li>
-    <li><a href="#tth_fIg2.13">2.13  Serialization of figure <a href="#fig:DirectedGraphBlankNode">2.3</a> into JSON-LD.</a></li>
-    <li><a href="#tth_fIg2.14">2.14  Framing in JSON-LD.</a></li>
-    <li><a href="#tth_fIg2.15">2.15  Serialization of figure <a href="#fig:DirectedGraphSimpleCorrect">2.2</a> in RDFa.</a></li>
-    <li><a href="#tth_fIg2.16">2.16  An example of the <span class="teletype">SELECT</span> form in SPARQL</a></li>
-    <li><a href="#tth_fIg2.17">2.17  An example of the <span class="teletype">ASK</span> form in SPARQL</a></li>
-    <li><a href="#tth_fIg2.18">2.18  An example of the <span class="teletype">CONSTRUCT</span> form in SPARQL</a></li>
-    <li><a href="#tth_fIg2.19">2.19  An example of the <span class="teletype">DESCRIBE</span> form in SPARQL</a></li>
-    <li><a href="#tth_fIg2.20">2.20  A possible serialization of the result from the query in listing <a href="#lst:BackgroundSPARQLDESCRIBE">2.19</a></a></li>
-    <li><a href="#tth_fIg2.21">2.21  Use of literals in JS</a></li>
-    <li><a href="#tth_fIg2.22">2.22  Emulation of classes in JS</a></li>
-    <li><a href="#tth_fIg2.23">2.23  Usage of prototype in JS</a></li>
-    <li><a href="#tth_fIg2.24">2.24  Object inheritance in JS</a></li>
-    <li><a href="#tth_fIg2.25">2.25  Instantiating functions in JS</a></li>
-    <li><a href="#tth_fIg2.26">2.26  A simple object in JS</a></li>
-    <li><a href="#tth_fIg2.27">2.27  Examples of scope in JS</a></li>
-    <li><a href="#tth_fIg2.28">2.28  A simple example of closure in JS</a></li>
-    <li><a href="#tth_fIg2.29">2.29  An example of code gone wrong because of faulty handling of closure</a></li>
-    <li><a href="#tth_fIg2.30">2.30  An example of static functions in JS</a></li>
-    <li><a href="#tth_fIg2.31">2.31  Examples of structures in JS that are valid and invalid JSON-objects</a></li>
-    <li><a href="#tth_fIg2.32">2.32  Examples of the Promise API</a></li>
-    <li><a href="#tth_fIg2.33">2.33  Use of contained modules in JS</a></li>
-    <li><a href="#tth_fIg2.34">2.34  Use of namespaces in JS</a></li>
-    <li><a href="#tth_fIg2.35">2.35  Use of AMD in JS</a></li>
-    <li><a href="#tth_fIg2.36">2.36  Use of CommonJS Module in JS</a></li>
-    <li><a href="#tth_fIg2.37">2.37  Use of modules in Harmony</a></li>
-    <li><a href="#tth_fIg2.38">2.38  Structure of Adapter</a></li>
-    <li><a href="#tth_fIg2.39">2.39  An example of implementation of Adapter in JS</a></li>
-    <li><a href="#tth_fIg2.40">2.40  Structure of Bridge</a></li>
-    <li><a href="#tth_fIg2.41">2.41  An example of implementation of Bridge in JS</a></li>
-    <li><a href="#tth_fIg2.42">2.42  Examples of the Builder pattern in jQuery</a></li>
-    <li><a href="#tth_fIg2.43">2.43  Structure of Builder</a></li>
-    <li><a href="#tth_fIg2.44">2.44  An example of implementation of Builder in JS</a></li>
-    <li><a href="#tth_fIg2.45">2.45  Structure of Composite</a></li>
-    <li><a href="#tth_fIg2.46">2.46  An example of implementation of Composite in JS</a></li>
-    <li><a href="#tth_fIg2.47">2.47  Structure of Decorator</a></li>
-    <li><a href="#tth_fIg2.48">2.48  An example of implementation of Decorator in JS</a></li>
-    <li><a href="#tth_fIg2.49">2.49  Structure of Facade</a></li>
-    <li><a href="#tth_fIg2.50">2.50  An example of implementation of Facade in JS</a></li>
-    <li><a href="#tth_fIg2.51">2.51  A tree-structure representing the equation "1+2-3".</a></li>
-    <li><a href="#tth_fIg2.52">2.52  Structure of Interpreter</a></li>
-    <li><a href="#tth_fIg2.53">2.53  An example of implementation of Interpreter in JS</a></li>
-    <li><a href="#tth_fIg2.54">2.54  Structure of Observer</a></li>
-    <li><a href="#tth_fIg2.55">2.55  An example of implementation of Observer in JS</a></li>
-    <li><a href="#tth_fIg2.56">2.56  Altering a functions behavior by extending its configuration with the parameter named option</a></li>
-    <li><a href="#tth_fIg2.57">2.57  Structure of Prototype</a></li>
-    <li><a href="#tth_fIg2.58">2.58  An example of implementation of Prototype in JS</a></li>
-    <li><a href="#tth_fIg2.59">2.59  Structure of Proxy</a></li>
-    <li><a href="#tth_fIg2.60">2.60  An example of implementation of Proxy in JS</a></li>
-    <li><a href="#tth_fIg2.61">2.61  Structure of Strategy</a></li>
-    <li><a href="#tth_fIg2.62">2.62  An example of implementation of Strategy in JS</a></li>
-    <li><a href="#tth_fIg2.63">2.63  An illustration of the TDD-process.</a></li>
-</ul>
-<ul class="list-of-figures">
-    <li><a href="#tth_fIg6.1">6.1  Dependencies between the main modules of Graphite.</a></li>
-    <li><a href="#tth_fIg6.2">6.2  Dependencies in the submodules of the Engine module</a></li>
-    <li><a href="#tth_fIg6.3">6.3  Dependencies in the submodules of the Graph module</a></li>
-    <li><a href="#tth_fIg6.4">6.4  Dependencies in the submodules of the Loader module</a></li>
-    <li><a href="#tth_fIg6.5">6.5  Dependencies in the submodules of the Query Parser module</a></li>
-    <li><a href="#tth_fIg6.6">6.6  Dependencies in the submodules of the RDF Parser module</a></li>
-</ul>
-<ul class="list-of-figures">
-    <li><a href="#tth_fIg8.1">8.1  Intersections of the pillars of this thesis</a></li>
-    <li><a href="#tth_fIg8.2">8.2  Testing for properties in JS</a></li>
-</ul>
+<div id="ListOfFigures">
+    <ul class="list-of-figures">
+        <li><a href="#tth_fIg2.1">2.1  A simple directed graph</a></li>
+        <li><a href="#tth_fIg2.2">2.2  A simple directed graph, with IRIs</a></li>
+        <li><a href="#tth_fIg2.3">2.3  A graph containing a BN.</a></li>
+        <li><a href="#tth_fIg2.4">2.4  Linking Open Data cloud diagram</a></li>
+        <li><a href="#tth_fIg2.5">2.5  Serialization of figure <a href="#fig:DirectedGraphSimpleCorrect">2.2</a> into RDF/XML.</a></li>
+        <li><a href="#tth_fIg2.6">2.6  XML and Semantic Web W3C Standards Timeline.</a></li>
+        <li><a href="#tth_fIg2.7">2.7  Serialization of figure <a href="#fig:DirectedGraphSimpleCorrect">2.2</a> into Turtle.</a></li>
+        <li><a href="#tth_fIg2.8">2.8  Serialization of figure <a href="#fig:DirectedGraphBlankNode">2.3</a> into Turtle.</a></li>
+        <li><a href="#tth_fIg2.9">2.9  Serialization of figure <a href="#fig:DirectedGraphSimpleCorrect">2.2</a> into N3.</a></li>
+        <li><a href="#tth_fIg2.10">2.10  Serialization of figure <a href="#fig:DirectedGraphSimpleCorrect">2.2</a> into N-Triples.</a></li>
+        <li><a href="#tth_fIg2.11">2.11  Serialization of figure <a href="#fig:DirectedGraphSimpleCorrect">2.2</a> into RDF JSON.</a></li>
+        <li><a href="#tth_fIg2.12">2.12  Serialization of figure <a href="#fig:DirectedGraphSimpleCorrect">2.2</a> into JSON-LD.</a></li>
+        <li><a href="#tth_fIg2.13">2.13  Serialization of figure <a href="#fig:DirectedGraphBlankNode">2.3</a> into JSON-LD.</a></li>
+        <li><a href="#tth_fIg2.14">2.14  Framing in JSON-LD.</a></li>
+        <li><a href="#tth_fIg2.15">2.15  Serialization of figure <a href="#fig:DirectedGraphSimpleCorrect">2.2</a> in RDFa.</a></li>
+        <li><a href="#tth_fIg2.16">2.16  An example of the <span class="teletype">SELECT</span> form in SPARQL</a></li>
+        <li><a href="#tth_fIg2.17">2.17  An example of the <span class="teletype">ASK</span> form in SPARQL</a></li>
+        <li><a href="#tth_fIg2.18">2.18  An example of the <span class="teletype">CONSTRUCT</span> form in SPARQL</a></li>
+        <li><a href="#tth_fIg2.19">2.19  An example of the <span class="teletype">DESCRIBE</span> form in SPARQL</a></li>
+        <li><a href="#tth_fIg2.20">2.20  A possible serialization of the result from the query in listing <a href="#lst:BackgroundSPARQLDESCRIBE">2.19</a></a></li>
+        <li><a href="#tth_fIg2.21">2.21  Use of literals in JS</a></li>
+        <li><a href="#tth_fIg2.22">2.22  Emulation of classes in JS</a></li>
+        <li><a href="#tth_fIg2.23">2.23  Usage of prototype in JS</a></li>
+        <li><a href="#tth_fIg2.24">2.24  Object inheritance in JS</a></li>
+        <li><a href="#tth_fIg2.25">2.25  Instantiating functions in JS</a></li>
+        <li><a href="#tth_fIg2.26">2.26  A simple object in JS</a></li>
+        <li><a href="#tth_fIg2.27">2.27  Examples of scope in JS</a></li>
+        <li><a href="#tth_fIg2.28">2.28  A simple example of closure in JS</a></li>
+        <li><a href="#tth_fIg2.29">2.29  An example of code gone wrong because of faulty handling of closure</a></li>
+        <li><a href="#tth_fIg2.30">2.30  An example of static functions in JS</a></li>
+        <li><a href="#tth_fIg2.31">2.31  Examples of structures in JS that are valid and invalid JSON-objects</a></li>
+        <li><a href="#tth_fIg2.32">2.32  Examples of the Promise API</a></li>
+        <li><a href="#tth_fIg2.33">2.33  Use of contained modules in JS</a></li>
+        <li><a href="#tth_fIg2.34">2.34  Use of namespaces in JS</a></li>
+        <li><a href="#tth_fIg2.35">2.35  Use of AMD in JS</a></li>
+        <li><a href="#tth_fIg2.36">2.36  Use of CommonJS Module in JS</a></li>
+        <li><a href="#tth_fIg2.37">2.37  Use of modules in Harmony</a></li>
+        <li><a href="#tth_fIg2.38">2.38  Structure of Adapter</a></li>
+        <li><a href="#tth_fIg2.39">2.39  An example of implementation of Adapter in JS</a></li>
+        <li><a href="#tth_fIg2.40">2.40  Structure of Bridge</a></li>
+        <li><a href="#tth_fIg2.41">2.41  An example of implementation of Bridge in JS</a></li>
+        <li><a href="#tth_fIg2.42">2.42  Examples of the Builder pattern in jQuery</a></li>
+        <li><a href="#tth_fIg2.43">2.43  Structure of Builder</a></li>
+        <li><a href="#tth_fIg2.44">2.44  An example of implementation of Builder in JS</a></li>
+        <li><a href="#tth_fIg2.45">2.45  Structure of Composite</a></li>
+        <li><a href="#tth_fIg2.46">2.46  An example of implementation of Composite in JS</a></li>
+        <li><a href="#tth_fIg2.47">2.47  Structure of Decorator</a></li>
+        <li><a href="#tth_fIg2.48">2.48  An example of implementation of Decorator in JS</a></li>
+        <li><a href="#tth_fIg2.49">2.49  Structure of Facade</a></li>
+        <li><a href="#tth_fIg2.50">2.50  An example of implementation of Facade in JS</a></li>
+        <li><a href="#tth_fIg2.51">2.51  A tree-structure representing the equation "1+2-3".</a></li>
+        <li><a href="#tth_fIg2.52">2.52  Structure of Interpreter</a></li>
+        <li><a href="#tth_fIg2.53">2.53  An example of implementation of Interpreter in JS</a></li>
+        <li><a href="#tth_fIg2.54">2.54  Structure of Observer</a></li>
+        <li><a href="#tth_fIg2.55">2.55  An example of implementation of Observer in JS</a></li>
+        <li><a href="#tth_fIg2.56">2.56  Altering a functions behavior by extending its configuration with the parameter named option</a></li>
+        <li><a href="#tth_fIg2.57">2.57  Structure of Prototype</a></li>
+        <li><a href="#tth_fIg2.58">2.58  An example of implementation of Prototype in JS</a></li>
+        <li><a href="#tth_fIg2.59">2.59  Structure of Proxy</a></li>
+        <li><a href="#tth_fIg2.60">2.60  An example of implementation of Proxy in JS</a></li>
+        <li><a href="#tth_fIg2.61">2.61  Structure of Strategy</a></li>
+        <li><a href="#tth_fIg2.62">2.62  An example of implementation of Strategy in JS</a></li>
+        <li><a href="#tth_fIg2.63">2.63  An illustration of the TDD-process.</a></li>
+    </ul>
+    <ul class="list-of-figures">
+        <li><a href="#tth_fIg6.1">6.1  Dependencies between the main modules of Graphite.</a></li>
+        <li><a href="#tth_fIg6.2">6.2  Dependencies in the submodules of the Engine module</a></li>
+        <li><a href="#tth_fIg6.3">6.3  Dependencies in the submodules of the Graph module</a></li>
+        <li><a href="#tth_fIg6.4">6.4  Dependencies in the submodules of the Loader module</a></li>
+        <li><a href="#tth_fIg6.5">6.5  Dependencies in the submodules of the Query Parser module</a></li>
+        <li><a href="#tth_fIg6.6">6.6  Dependencies in the submodules of the RDF Parser module</a></li>
+    </ul>
+    <ul class="list-of-figures">
+        <li><a href="#tth_fIg8.1">8.1  Intersections of the pillars of this thesis</a></li>
+        <li><a href="#tth_fIg8.2">8.2  Testing for properties in JS</a></li>
+    </ul>
+</div>
 
 <h2 id="LOT">List of Tables</h2>
 
-<ul class="list-of-tables">
-    <li><a href="#tth_tAb2.1">2.1  Result from a <span class="teletype">SELECT</span> query</a></li>
-    <li><a href="#tth_tAb2.2">2.2  Result from a <span class="teletype">SELECT</span> query</a></li>
-    <li><a href="#tth_tAb2.3">2.3  Categorization of SDPs</a></li>
-    <li><a href="#tth_tAb5.1">5.1  Overview of branches and their modules.</a></li>
-    <li><a href="#tth_tAbB.1">B.1  Test results for tests part of Graphite.</a></li>
-    <li><a href="#tth_tAbC.1">C.1  List of projects examined as part of this thesis.</a></li>
-</ul>
+<div id="ListOfTables">
+    <ul class="list-of-tables">
+        <li><a href="#tth_tAb2.1">2.1  Result from a <span class="teletype">SELECT</span> query</a></li>
+        <li><a href="#tth_tAb2.2">2.2  Result from a <span class="teletype">SELECT</span> query</a></li>
+        <li><a href="#tth_tAb2.3">2.3  Categorization of SDPs</a></li>
+        <li><a href="#tth_tAb5.1">5.1  Overview of branches and their modules.</a></li>
+        <li><a href="#tth_tAbB.1">B.1  Test results for tests part of Graphite.</a></li>
+        <li><a href="#tth_tAbC.1">C.1  List of projects examined as part of this thesis.</a></li>
+    </ul>
+</div>
 
 <div id="MainContent">
     <h2 id="tth_chAp1"><a class="bookmark" href="#tth_chAp1">Chapter 1<br />Introduction</a></h2>
@@ -5570,6 +5576,17 @@ buster.testCase("Testing contract", {
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script>
     $(function () {
+        $("#Contents, #ListOfFigures, #ListOfTables").each(function (index, element) {
+            var $element = $(element).hide();
+            var button = $('<a href="#">Click to see list</a>');
+            button.click(function () {
+                $element.show("slow");
+                button.hide();
+                return false;
+            });
+            $element.after(button);
+
+        });
         $("pre").each(function (index, value) {
             var list = $('<dl></dl>');
             var code = $(value).addClass("code");

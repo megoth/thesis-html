@@ -151,12 +151,6 @@ p {
 #TOC {
   @include list-unordered;
 }
-.list-of-tables {
-  display: none;
-}
-#LOT {
-  display: none;
-}
 #MainContent {
   ol {
     @include list-ordered;
@@ -231,12 +225,6 @@ table {
     .ln {
       background-color: #fff;
     }
-  }
-  .list-of-tables {
-    display: block;
-  }
-  #LOT {
-    display: block;
   }
   table {
     @include table-size(0.7);
