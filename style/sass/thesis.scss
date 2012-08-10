@@ -1,3 +1,5 @@
+@import "compass/css3/images";
+
 /* Variables */
 $screen-small: 30em;
 $width-medium: 50em;
@@ -75,17 +77,34 @@ body {
   font-size: 0.9em;
   margin: 1 / 0.9 * 1em 0;
   word-wrap: normal;
+  .caption {
+    border-top: solid 1px #bbb;
+  }
   img {
     width: 75%;
   }
   pre {
     background: #ddd;
-    border-bottom: solid 1px #bbb;
     color: #000;
     font-family: Consolas, Lucida Console, "Courier New", monospace;
     line-height: 1.1em;
-    overflow: auto;
     padding: 1 / 0.9 * 0.5em;
+    &.code {
+      padding: 0;
+      .cl {
+        border-left: solid 1px #aaa;
+        margin-left: 20px;
+        word-wrap: break-word;
+      }
+      .ln {
+        clear: left;
+        float: left;
+        font-size: 0.8em;
+        padding-right: 2px;
+        text-align: right;
+        width: 20px;
+      }
+    }
   }
 }
 h1 {
@@ -198,6 +217,20 @@ table {
   }
   body {
     margin: 1em 2em;
+  }
+  .figure pre.code {
+    background-image: url('img/code-ln.png');
+    background-position: left top;
+    background-repeat: repeat-y;
+    left: -23px;
+    margin-right: -23px;
+    position: relative;
+    .cl {
+      margin-left: 22px;
+    }
+    .ln {
+      background-color: #fff;
+    }
   }
   .list-of-tables {
     display: block;

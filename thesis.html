@@ -5567,5 +5567,19 @@ buster.testCase("Testing contract", {
     by <a href="http://hutchinson.belmont.ma.us/tth/">    T<sub>T</sub>H</a>,
     version 4.01.<br />On  9 Aug 2012, 12:22.</small>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>
+    $(function () {
+        $("pre").each(function (index, value) {
+            var list = $('<dl></dl>');
+            var code = $(value).addClass("code");
+            code.text().split("\n").forEach(function (line, index) {
+                $('<dt class="ln"></dt>').html(index + 1).appendTo(list);
+                $('<dd class="cl"></dd>').html(line.replace("<", "&#60;").replace(">", "&#62;") + "&nbsp;").appendTo(list);
+            });
+            code.html(list);
+        });
+    });
+</script>
 </body>
 </html>
