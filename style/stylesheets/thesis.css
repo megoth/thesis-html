@@ -129,6 +129,9 @@ h5 {
   line-height: 1em;
   margin: 0.909em 0;
 }
+strong {
+  font-weight: bold;
+}
 
 /* line 139, ../sass/thesis.scss */
 #Header {

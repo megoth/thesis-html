@@ -200,6 +200,10 @@ h5 {
   margin: 0.909em 0;
 }
 
+strong {
+  font-weight: bold;
+}
+
 /* line 139, /home/megoth/Dropbox/workspace/thesis-html/style/sass/thesis.scss */
 #Header {
   text-align: center;
